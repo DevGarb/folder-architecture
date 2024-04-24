@@ -28,8 +28,15 @@
   }
 ```
 
-```  
-  "devDependencies": {
+```
+"dependencies": {
+    "axios": "^1.6.8",
+    "react-dom": "^18.2.0",
+    "react-icons": "^5.1.0",
+    "react-router-dom": "^6.23.0"
+  },
+
+"devDependencies": {
     "@testing-library/jest-dom": "^6.4.2",
     "@testing-library/react": "^15.0.4",
     "@testing-library/user-event": "^14.5.2",
