@@ -1,5 +1,5 @@
 import { SlGhost } from "react-icons/sl";
-import styles from './ErrorPage.module.css'
+import styles from './ErrorPage.module.css';
 
 export const ErrorPage = () => {
   return (

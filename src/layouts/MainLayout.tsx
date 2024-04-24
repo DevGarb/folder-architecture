@@ -8,7 +8,7 @@ export const MainLayout = () => {
     <>
 
       <main className={styles.Main}>
-        < Home />
+        <Home />
       </main>
 
     </>

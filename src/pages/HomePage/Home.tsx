@@ -1,3 +1,4 @@
+import { Button } from "../../components/Button/Button";
 import styles from "./Home.module.css";
 
 // import {
@@ -11,11 +12,8 @@ import styles from "./Home.module.css";
 
 export const Home = () => {
   return (
-<div className={styles.HomePage}>
-      {/* <Hero />
-      <FeaturesCollections />
-      <ProductsList hasTitle isTrending title="Produtos em alta" />
-      <Banner /> */}
+<div className={styles.container}>
+    <Button text="BOTÃO" />
     </div>
   );
 };
