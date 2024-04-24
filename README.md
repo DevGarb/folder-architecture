@@ -91,8 +91,24 @@ export default defineConfig({
 import "@testing-library/jest-dom";
 ```
 
+## Test with Jest 'n React Testing Library
 
+<img src="/public/test.jpg" alt="Index">
 
+## 🤝 Owner
+
+<table>
+  <tr>
+    <td>
+      <a href="#" title="defina o titulo do link">
+        <img src="https://avatars3.githubusercontent.com/u/31936044" width="100px;" alt="GitHub"/><br>
+        <sub>
+          <b>Gabriel Porto</b>
+        </sub>
+      </a>
+    </td>
+  </tr>
+</table>
 
 
 
