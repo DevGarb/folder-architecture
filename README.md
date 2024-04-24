@@ -20,4 +20,72 @@
 
 `utils`: Funções utilitárias como formatCurrency, formatPhone, convertTimezone, parsePhone (javascript puro).
 
-## A aplicação simula uma loja de carros
+## Implementação de teste "Vitest"
+> " package.json "
+```
+  "scripts": {
+    "test": "vitest"
+  }
+```
+
+```  
+  "devDependencies": {
+    "@testing-library/jest-dom": "^6.4.2",
+    "@testing-library/react": "^15.0.4",
+    "@testing-library/user-event": "^14.5.2",
+    "@types/jest": "^29.5.12",
+    "jsdom": "^24.0.0",
+    "vitest": "^1.5.1"
+  }
+}
+```
+
+> " home.test.tsx "
+
+```
+// react testing library
+
+import { render, screen } from '@testing-library/react';
+import Home from './Home';
+
+describe("<Home />", () => {
+    it("Renderizou o título", () => {
+        render(<Home />);
+
+        expect(screen.getByText("Home")).toBeInTheDocument();
+    });
+});
+```
+
+> " vite.config.ts "
+
+```
+/// <reference types="vitest" />
+/// <reference types="vite/client" />
+
+import react from '@vitejs/plugin-react'
+import { defineConfig } from 'vite'
+
+// https://vitejs.dev/config/
+export default defineConfig({
+  plugins: [react()],
+  test: {
+    globals:true,
+    environment: "jsdom",
+    setupFiles: "./src/test/setup.ts",
+    css:true,
+  },
+});
+```
+
+> " setup.ts "
+
+```
+import "@testing-library/jest-dom";
+```
+
+
+
+
+
+
